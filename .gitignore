@@ -1,4 +1,23 @@
 public
 resources
-.hugo build.lock
+.hugo_build.lock
 hugo.exe
+
+index.html
+index.xml
+sitemap.xml
+404.html
+scss/
+js/
+ts/
+img/
+ar/
+en/
+zh-cn/
+page/
+post/
+p/
+categories/
+tags/
+archives/
+search/
