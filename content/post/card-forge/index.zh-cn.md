@@ -1,7 +1,7 @@
 ---
 title: Card-Forge - 传奇卡牌铸造工坊
 description: 打造独一无二的传奇卡牌，设计精美的游戏卡牌、收藏卡或名片
-date: 2026-07-10
+date: 2026-07-07
 slug: card-forge
 categories:
     - 项目
