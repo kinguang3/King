@@ -3,7 +3,7 @@ title: Card-Forge - 传奇卡牌铸造工坊
 description: 打造独一无二的传奇卡牌，设计精美的游戏卡牌、收藏卡或名片
 date: 2026-07-07
 slug: card-forge
-image: card-forge-preview.jpg
+image: CardForge.png
 categories:
     - 项目
     - 网站
@@ -13,7 +13,7 @@ categories:
 
 Card-Forge 是一个强大的卡牌制作网站，让你能够轻松设计精美的游戏卡牌、收藏卡或名片。
 
-![Card-Forge 网站预览](card-forge-preview.jpg)
+![Card-Forge 网站预览](CardForge.png)
 
 ### 网站地址
 
