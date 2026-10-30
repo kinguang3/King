@@ -4,7 +4,6 @@ A personal website built with Hugo and the Stack theme.
 
 ## Features
 
-- Multi-language support (Chinese, English, Arabic)
 - Responsive design
 - Dark mode toggle
 - Search functionality
@@ -91,13 +90,6 @@ The base URL is configured in `hugo.yaml`:
 ```yaml
 baseurl: https://kinguang3.github.io/King
 ```
-
-### Languages
-
-Supported languages:
-- Chinese (zh-cn) - Default
-- English (en)
-- Arabic (ar)
 
 ### Theme
 
