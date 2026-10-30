@@ -1,109 +1,102 @@
-# King - Personal Website
+# King - 个人网站
 
-A personal website built with Hugo and the Stack theme.
+基于 Hugo 和 Stack 主题搭建的个人网站，主要用于记录项目与文章。
 
-## Features
+## 文章
 
-- Responsive design
-- Dark mode toggle
-- Search functionality
-- Archive and category pages
-- Tag cloud
-- Social links
-- Article pagination
+- [Card-Forge - 传奇卡牌铸造工坊](https://kinguang3.github.io/King/p/card-forge/) - 打造独一无二的传奇卡牌
+- [学习 Pi Agent 的工作流](https://kinguang3.github.io/King/p/pi-agent-workflow/) - 最小化 Agent Harness 的自我规划与任务处理
+- [GBC Nina - 住在你桌面上的小猫](https://kinguang3.github.io/King/p/gbc-nina/) - 基于 Python + PySide6 的 Windows 桌面宠物
 
-## Tech Stack
+## 特性
 
-- **Hugo** - Static site generator
-- **Stack Theme** - Hugo theme for personal blogs
-- **GitHub Pages** - Hosting platform
-- **GitHub Actions** - CI/CD deployment
+- 响应式布局与暗色模式
+- 全文搜索
+- 归档、分类与标签
+- 文章目录与分页
+- GitHub Pages 自动部署
 
-## Quick Start
+## 技术栈
 
-### Prerequisites
+- **Hugo** - 静态网站生成器
+- **Stack Theme** - Hugo 个人博客主题
+- **GitHub Pages** - 托管平台
+- **GitHub Actions** - 持续集成与自动部署
 
-- Hugo Extended version 0.150.1 or later
+## 本地开发
+
+### 环境要求
+
+- Hugo Extended 0.150.1 或更高版本
 - Git
 
-### Local Development
+### 启动
 
 ```bash
-# Clone the repository
+# 克隆仓库
 git clone https://github.com/kinguang3/King.git
 cd King
 
-# Start development server
+# 本地预览
 hugo server
 
-# Build for production
+# 生产构建
 hugo --minify
 ```
 
-### Preview
+### 预览地址
 
-- Development: http://localhost:1313/King/
-- Production: https://kinguang3.github.io/King/
+- 本地开发：http://localhost:1313/King/
+- 线上站点：https://kinguang3.github.io/King/
 
-## Project Structure
+## 目录结构
 
 ```
 .
-├── archetypes/          # Content templates
-├── assets/              # Static assets (CSS, JS)
-├── content/             # Site content (Markdown)
-├── static/              # Static files (images, favicon)
-├── themes/              # Hugo themes
+├── archetypes/               # 内容模板
+├── assets/                   # 头像、编辑器配置等资源
+├── content/                  # 页面与文章
+│   ├── _index.zh-cn.md       # 首页配置
+│   ├── page/                 # 归档、搜索等功能页
+│   └── post/                 # 博客文章
+├── static/                   # 静态文件（favicon）
+├── themes/                   # Hugo 主题
 │   └── hugo-theme-stack/
-├── .github/
-│   └── workflows/
-│       └── gh-pages.yml # GitHub Actions workflow
-├── hugo.yaml            # Hugo configuration
-└── .gitignore           # Git ignore rules
+├── .github/workflows/        # GitHub Actions 工作流
+├── hugo.yaml                 # Hugo 站点配置
+└── .gitignore                # Git 忽略规则
 ```
 
-## Deployment
+## 部署
 
-This site is automatically deployed to GitHub Pages via GitHub Actions.
+推送代码到 `main` 分支后，GitHub Actions 会自动构建并部署到 GitHub Pages。
 
-### Workflow
-
-1. Push changes to the `main` branch
-2. GitHub Actions triggers the build workflow
-3. Hugo builds the site and deploys to GitHub Pages
-
-### Manual Deployment
+手动构建：
 
 ```bash
-# Build the site
 hugo --minify
-
-# The output is in the public/ directory
 ```
 
-## Configuration
+构建产物位于 `public/` 目录。
 
-### Base URL
+## 配置说明
 
-The base URL is configured in `hugo.yaml`:
+站点配置位于 `hugo.yaml`：
 
 ```yaml
 baseurl: https://kinguang3.github.io/King
-```
-
-### Theme
-
-Using the Stack theme:
-
-```yaml
 theme: hugo-theme-stack
+DefaultContentLanguage: zh-cn
 ```
 
-## License
+- 站点语言为简体中文，未启用其他语言
+- 评论功能默认关闭，可在 `params.comments` 中开启
 
-This project is for personal use.
+## 许可
 
-## Credits
+本项目仅供个人使用。
+
+## 致谢
 
 - [Hugo](https://gohugo.io/)
 - [Stack Theme](https://github.com/CaiJimmy/hugo-theme-stack)
