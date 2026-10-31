@@ -4,7 +4,6 @@
 
 ## 文章
 
-- [Card-Forge - 传奇卡牌铸造工坊](https://kinguang3.github.io/King/p/card-forge/) - 打造独一无二的传奇卡牌
 - [学习 Pi Agent 的工作流](https://kinguang3.github.io/King/p/pi-agent-workflow/) - 最小化 Agent Harness 的自我规划与任务处理
 - [GBC Nina - 住在你桌面上的小猫](https://kinguang3.github.io/King/p/gbc-nina/) - 基于 Python + PySide6 的 Windows 桌面宠物
 
