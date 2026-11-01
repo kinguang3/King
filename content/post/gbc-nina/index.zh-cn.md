@@ -19,9 +19,10 @@ GBC Nina 是一款轻量级的 Windows 桌面宠物，基于 Python + PySide6 �
 
 核心目标是提供一个**有生命感**的桌面伴侣，而不是一个简单的动画播放器。
 
-### 仓库地址
+### 相关链接
 
-[https://github.com/kinguang3/Deskpot-Pet-Cat](https://github.com/kinguang3/Deskpot-Pet-Cat)
+- 仓库地址：[https://github.com/kinguang3/Deskpot-Pet-Cat](https://github.com/kinguang3/Deskpot-Pet-Cat)
+- 在线体验：[https://nina.crimsonseraph.top/](https://nina.crimsonseraph.top/)
 
 ## 核心功能
 
