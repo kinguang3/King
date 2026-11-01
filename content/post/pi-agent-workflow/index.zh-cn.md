@@ -99,6 +99,11 @@ Pi Agent 提供了一种优雅的方式来构建 AI Agent。它的核心理念�
 2. 将 Agent 集成到现有工作流中
 3. 构建可验证、可追踪的 AI 应用
 
+## 相关链接
+
+- Pi 仓库：[https://github.com/earendil-works/pi](https://github.com/earendil-works/pi)
+- 官方文档：[https://pi.dev/](https://pi.dev/)
+
 ---
 
 **开始学习 Pi，让 AI Agent 真正为你所用。**
