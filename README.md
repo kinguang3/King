@@ -1,17 +1,29 @@
 # King - 个人网站
 
-基于 Hugo 和 Stack 主题搭建的个人网站，主要用于记录项目与文章。
+基于 Hugo 和 Stack 主题搭建的个人网站，用于记录项目、技术文章与个人经历。
+
+线上地址：https://kinguang3.github.io/King/
 
 ## 文章
 
 - [学习 Pi Agent 的工作流](https://kinguang3.github.io/King/p/pi-agent-workflow/) - 最小化 Agent Harness 的自我规划与任务处理
 - [GBC Nina - 住在你桌面上的小猫](https://kinguang3.github.io/King/p/gbc-nina/) - 基于 Python + PySide6 的 Windows 桌面宠物
 
+## 项目
+
+更多项目见 [项目页](https://kinguang3.github.io/King/projects/)，主要包括：
+
+- **TheNook** - 推理小说发现与收藏平台
+- **GBC Nina / Deskpot-Pet-Cat** - Windows 桌面宠物
+- **Nexus** - LangChain Agent 框架
+- **Card-Forge** - 卡牌设计与实时预览工具
+
 ## 特性
 
+- 关于、项目、归档与搜索页面
 - 响应式布局与暗色模式
+- 首页点阵光晕动态背景（跟随鼠标）
 - 全文搜索
-- 归档、分类与标签
 - 文章目录与分页
 - GitHub Pages 自动部署
 
@@ -56,11 +68,11 @@ hugo --minify
 ├── assets/                   # 头像、编辑器配置等资源
 ├── content/                  # 页面与文章
 │   ├── _index.zh-cn.md       # 首页配置
-│   ├── page/                 # 归档、搜索等功能页
+│   ├── page/                 # 关于、项目、归档、搜索
 │   └── post/                 # 博客文章
+├── layouts/partials/         # 首页背景等自定义模板
 ├── static/                   # 静态文件（favicon）
-├── themes/                   # Hugo 主题
-│   └── hugo-theme-stack/
+├── themes/hugo-theme-stack/  # Hugo 主题
 ├── .github/workflows/        # GitHub Actions 工作流
 ├── hugo.yaml                 # Hugo 站点配置
 └── .gitignore                # Git 忽略规则
@@ -90,6 +102,7 @@ DefaultContentLanguage: zh-cn
 
 - 站点语言为简体中文，未启用其他语言
 - 评论功能默认关闭，可在 `params.comments` 中开启
+- 首页背景效果位于 `layouts/partials/head/custom.html` 与 `layouts/partials/footer/custom.html`，仅作用于首页
 
 ## 许可
 
