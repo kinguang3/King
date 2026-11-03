@@ -1,0 +1,30 @@
+{{- if .IsHome -}}
+<div class="site-bg" aria-hidden="true">
+    <div class="site-bg__glow"></div>
+    <div class="site-bg__dots"></div>
+</div>
+<script>
+    (() => {
+        const bg = document.querySelector('.site-bg');
+        if (!bg) return;
+
+        let frame = 0;
+        let x = window.innerWidth * 0.5;
+        let y = window.innerHeight * 0.28;
+
+        const apply = () => {
+            frame = 0;
+            bg.style.setProperty('--mx', x + 'px');
+            bg.style.setProperty('--my', y + 'px');
+        };
+
+        window.addEventListener('pointermove', (event) => {
+            x = event.clientX;
+            y = event.clientY;
+            if (!frame) frame = window.requestAnimationFrame(apply);
+        }, { passive: true });
+
+        apply();
+    })();
+</script>
+{{- end -}}

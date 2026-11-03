@@ -1,0 +1,70 @@
+{{- if .IsHome -}}
+<style>
+    .site-bg {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        overflow: hidden;
+        pointer-events: none;
+        --mx: 50%;
+        --my: 28%;
+    }
+
+    .site-bg__dots,
+    .site-bg__glow {
+        position: absolute;
+        inset: 0;
+    }
+
+    .site-bg__dots {
+        opacity: .55;
+        background-image: radial-gradient(circle, rgba(99, 102, 241, .30) 1px, transparent 1.6px);
+        background-size: 26px 26px;
+        background-position: center;
+        -webkit-mask-image: radial-gradient(circle 360px at var(--mx) var(--my), #000 0%, rgba(0, 0, 0, .45) 45%, transparent 72%);
+        mask-image: radial-gradient(circle 360px at var(--mx) var(--my), #000 0%, rgba(0, 0, 0, .45) 45%, transparent 72%);
+    }
+
+    .site-bg__glow {
+        background:
+            radial-gradient(600px circle at var(--mx) var(--my), rgba(99, 102, 241, .12), transparent 65%),
+            radial-gradient(38% 42% at 18% 22%, rgba(236, 72, 153, .10), transparent 70%),
+            radial-gradient(42% 45% at 82% 30%, rgba(34, 211, 238, .09), transparent 72%),
+            radial-gradient(46% 46% at 52% 88%, rgba(168, 85, 247, .10), transparent 72%);
+        filter: blur(12px);
+        animation: site-bg-float 22s ease-in-out infinite alternate;
+    }
+
+    [data-scheme="dark"] .site-bg__dots {
+        background-image: radial-gradient(circle, rgba(165, 180, 252, .30) 1px, transparent 1.6px);
+    }
+
+    [data-scheme="dark"] .site-bg__glow {
+        background:
+            radial-gradient(600px circle at var(--mx) var(--my), rgba(129, 140, 248, .16), transparent 65%),
+            radial-gradient(38% 42% at 18% 22%, rgba(236, 72, 153, .12), transparent 70%),
+            radial-gradient(42% 45% at 82% 30%, rgba(34, 211, 238, .10), transparent 72%),
+            radial-gradient(46% 46% at 52% 88%, rgba(168, 85, 247, .12), transparent 72%);
+    }
+
+    body > .container.main-container,
+    body > .site-footer {
+        position: relative;
+        z-index: 1;
+    }
+
+    @keyframes site-bg-float {
+        0% { transform: translate3d(-2%, -1%, 0) scale(1); }
+        50% { transform: translate3d(2%, 1.5%, 0) scale(1.06); }
+        100% { transform: translate3d(-1%, 2%, 0) scale(1.02); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .site-bg__glow { animation: none; }
+    }
+
+    @media (max-width: 700px) {
+        .site-bg__dots { opacity: .35; }
+    }
+</style>
+{{- end -}}
