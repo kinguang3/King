@@ -33,8 +33,8 @@ jobs:
 
       - name: Install Dart Sass
         run: |
-          curl -fsSL -o "$RUNNER_TEMP/dart-sass.zip" https://github.com/sass/dart-sass/releases/download/1.108.2/dart-sass-1.108.2-linux-x64.zip
-          unzip -q "$RUNNER_TEMP/dart-sass.zip" -d "$RUNNER_TEMP"
+          curl -fsSL -o "$RUNNER_TEMP/dart-sass.tar.gz" https://github.com/sass/dart-sass/releases/download/1.108.2/dart-sass-1.108.2-linux-x64.tar.gz
+          tar -xzf "$RUNNER_TEMP/dart-sass.tar.gz" -C "$RUNNER_TEMP"
           echo "$RUNNER_TEMP/dart-sass" >> "$GITHUB_PATH"
 
       - name: Build
