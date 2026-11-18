@@ -6,6 +6,7 @@
 
 ## 文章
 
+- [Synapse：给 AI Agent 一个共享的项目记忆](https://kinguang3.github.io/King/p/synapse-memory-layer/) - 本地优先的代码知识图谱与持久记忆层
 - [学习 Pi Agent 的工作流](https://kinguang3.github.io/King/p/pi-agent-workflow/) - 最小化 Agent Harness 的自我规划与任务处理
 - [GBC Nina - 住在你桌面上的小猫](https://kinguang3.github.io/King/p/gbc-nina/) - 基于 Python + PySide6 的 Windows 桌面宠物
 
@@ -13,6 +14,7 @@
 
 更多项目见 [项目页](https://kinguang3.github.io/King/projects/)，主要包括：
 
+- **Synapse** - 本地优先的代码知识图谱与 AI Agent 共享记忆层
 - **TheNook** - 推理小说发现与收藏平台
 - **GBC Nina / Deskpot-Pet-Cat** - Windows 桌面宠物
 - **Nexus** - LangChain Agent 框架

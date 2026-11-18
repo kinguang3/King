@@ -9,6 +9,9 @@ menu:
             icon: categories
 comments: false
 links:
+    - title: Synapse
+      description: 本地优先的代码知识图谱与持久记忆层，为 AI Agent 提供跨工具共享的项目上下文 · Python
+      website: https://synapse-mcp.cc.cd/
     - title: TheNook
       description: 一个专注于推理小说的发现与收藏平台 · TypeScript
       website: https://www.thenook.cc.cd/
